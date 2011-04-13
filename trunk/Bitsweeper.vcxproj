@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{60EC5793-462A-4D75-9E8B-96223F059538}</ProjectGuid>
+    <RootNamespace>NDSARM9</RootNamespace>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make clean
+make</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">make clean</NMakeCleanCommandLine>
+    <NMakeOutput Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <NMakePreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <NMakeForcedUsingAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(NMakeForcedUsingAssemblies)</NMakeForcedUsingAssemblies>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <NMakeBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make 2&gt;&amp;1 | sed -e %27s/\(.[a-zA-Z]\+\):\([0-9]\+\):/\1(\2):/%27 -e %27s/\(undefined reference\)/error : \1/%27</NMakeBuildCommandLine>
+    <NMakeReBuildCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make clean
+make 2&gt;&amp;1 | sed -e %27s/\(.[a-zA-Z]\+\):\([0-9]\+\):/\1(\2):/%27 -e %27s/\(undefined reference\)/error : \1/%27</NMakeReBuildCommandLine>
+    <NMakeCleanCommandLine Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">make clean</NMakeCleanCommandLine>
+    <NMakeOutput Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <NMakePreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakeIncludeSearchPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\devkitPro\libnds9\include;$(NMakeIncludeSearchPath)</NMakeIncludeSearchPath>
+    <NMakeForcedIncludes Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(NMakeForcedIncludes)</NMakeForcedIncludes>
+    <NMakeAssemblySearchPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(NMakeAssemblySearchPath)</NMakeAssemblySearchPath>
+    <NMakeForcedUsingAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(NMakeForcedUsingAssemblies)</NMakeForcedUsingAssemblies>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ArithmeticsClass.cpp" />
+    <ClCompile Include="source\BestScoresLineClass.cpp" />
+    <ClCompile Include="source\BestScoresTableClass.cpp" />
+    <ClCompile Include="source\BoardCellClass.cpp" />
+    <ClCompile Include="source\CommonDataClass.cpp" />
+    <ClCompile Include="source\LinearEvaluatorClass.cpp" />
+    <ClCompile Include="source\MainEntryPoint.cpp" />
+    <ClCompile Include="source\OperationsClass.cpp" />
+    <ClCompile Include="source\PolySaveManagerClass.cpp" />
+    <ClCompile Include="source\RandomNumberGeneratorClass.cpp" />
+    <ClCompile Include="source\StateClass.cpp" />
+    <ClCompile Include="source\StateMachineClass.cpp" />
+    <ClCompile Include="source\TrigonometryClass.cpp" />
+    <ClCompile Include="source\BackgroundFadeInStateClass.cpp" />
+    <ClCompile Include="source\BackgroundFadeOutStateClass.cpp" />
+    <ClCompile Include="source\BestScoresTableAppearStateClass.cpp" />
+    <ClCompile Include="source\BestScoresTableDisappearStateClass.cpp" />
+    <ClCompile Include="source\BestScoresTableWaitStateClass.cpp" />
+    <ClCompile Include="source\BoardAppearStateClass.cpp" />
+    <ClCompile Include="source\BoardCellChangeAppearStateClass.cpp" />
+    <ClCompile Include="source\BoardCellChangeDisappearStateClass.cpp" />
+    <ClCompile Include="source\BoardCellExplodeStateClass.cpp" />
+    <ClCompile Include="source\BoardCellUncoverStateClass.cpp" />
+    <ClCompile Include="source\BoardDisappearStateClass.cpp" />
+    <ClCompile Include="source\BoardWaitStateClass.cpp" />
+    <ClCompile Include="source\GameLostAppearStateClass.cpp" />
+    <ClCompile Include="source\GameLostDisappearStateClass.cpp" />
+    <ClCompile Include="source\GameLostNotVisibleWaitStateClass.cpp" />
+    <ClCompile Include="source\GameLostVanishStateClass.cpp" />
+    <ClCompile Include="source\GameLostVisibleWaitStateClass.cpp" />
+    <ClCompile Include="source\GameWonAppearStateClass.cpp" />
+    <ClCompile Include="source\GameWonDisappearStateClass.cpp" />
+    <ClCompile Include="source\GameWonNotVisibleWaitStateClass.cpp" />
+    <ClCompile Include="source\GameWonVanishStateClass.cpp" />
+    <ClCompile Include="source\GameWonVisibleWaitStateClass.cpp" />
+    <ClCompile Include="source\LegendAppearStateClass.cpp" />
+    <ClCompile Include="source\LegendDisappearStateClass.cpp" />
+    <ClCompile Include="source\LegendVanishStateClass.cpp" />
+    <ClCompile Include="source\LogoAndStartButtonVanishStateClass.cpp" />
+    <ClCompile Include="source\LogoEnlargeStateClass.cpp" />
+    <ClCompile Include="source\LogoShrinkStateClass.cpp" />
+    <ClCompile Include="source\LogoZoomInStateClass.cpp" />
+    <ClCompile Include="source\MenuAppearStateClass.cpp" />
+    <ClCompile Include="source\MenuDisappearStateClass.cpp" />
+    <ClCompile Include="source\MenuVanishStateClass.cpp" />
+    <ClCompile Include="source\MenuWaitStateClass.cpp" />
+    <ClCompile Include="source\ShutDownStateClass.cpp" />
+    <ClCompile Include="source\StartButtonAppearStateClass.cpp" />
+    <ClCompile Include="source\StartButtonVanishStateClass.cpp" />
+    <ClCompile Include="source\StartButtonWaitStateClass.cpp" />
+    <ClCompile Include="source\StartButtonZoomInStateClass.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\ArithmeticsClass.h" />
+    <ClInclude Include="source\BestScoresLineClass.h" />
+    <ClInclude Include="source\BestScoresLineLevelEnum.h" />
+    <ClInclude Include="source\BestScoresTableClass.h" />
+    <ClInclude Include="source\BoardCellClass.h" />
+    <ClInclude Include="source\BoardCellStateEnum.h" />
+    <ClInclude Include="source\CommonDataClass.h" />
+    <ClInclude Include="source\ImageIncludes.h" />
+    <ClInclude Include="source\LinearEvaluatorClass.h" />
+    <ClInclude Include="source\OperationsClass.h" />
+    <ClInclude Include="source\PolySaveManagerClass.h" />
+    <ClInclude Include="source\PolySaveManagerErrorsEnum.h" />
+    <ClInclude Include="source\RandomNumberGeneratorClass.h" />
+    <ClInclude Include="source\StateClass.h" />
+    <ClInclude Include="source\StateIncludes.h" />
+    <ClInclude Include="source\StateMachineClass.h" />
+    <ClInclude Include="source\TrigonometryClass.h" />
+    <ClInclude Include="source\BackgroundFadeInStateClass.h" />
+    <ClInclude Include="source\BackgroundFadeOutStateClass.h" />
+    <ClInclude Include="source\BestScoresTableAppearStateClass.h" />
+    <ClInclude Include="source\BestScoresTableDisappearStateClass.h" />
+    <ClInclude Include="source\BestScoresTableWaitStateClass.h" />
+    <ClInclude Include="source\BoardAppearStateClass.h" />
+    <ClInclude Include="source\BoardCellChangeAppearStateClass.h" />
+    <ClInclude Include="source\BoardCellChangeDisappearStateClass.h" />
+    <ClInclude Include="source\BoardCellExplodeStateClass.h" />
+    <ClInclude Include="source\BoardCellUncoverStateClass.h" />
+    <ClInclude Include="source\BoardDisappearStateClass.h" />
+    <ClInclude Include="source\BoardWaitStateClass.h" />
+    <ClInclude Include="source\GameLostAppearStateClass.h" />
+    <ClInclude Include="source\GameLostDisappearStateClass.h" />
+    <ClInclude Include="source\GameLostNotVisibleWaitStateClass.h" />
+    <ClInclude Include="source\GameLostVanishStateClass.h" />
+    <ClInclude Include="source\GameLostVisibleWaitStateClass.h" />
+    <ClInclude Include="source\GameWonAppearStateClass.h" />
+    <ClInclude Include="source\GameWonDisappearStateClass.h" />
+    <ClInclude Include="source\GameWonNotVisibleWaitStateClass.h" />
+    <ClInclude Include="source\GameWonVanishStateClass.h" />
+    <ClInclude Include="source\GameWonVisibleWaitStateClass.h" />
+    <ClInclude Include="source\LegendAppearStateClass.h" />
+    <ClInclude Include="source\LegendDisappearStateClass.h" />
+    <ClInclude Include="source\LegendVanishStateClass.h" />
+    <ClInclude Include="source\LogoAndStartButtonVanishStateClass.h" />
+    <ClInclude Include="source\LogoEnlargeStateClass.h" />
+    <ClInclude Include="source\LogoShrinkStateClass.h" />
+    <ClInclude Include="source\LogoZoomInStateClass.h" />
+    <ClInclude Include="source\MenuAppearStateClass.h" />
+    <ClInclude Include="source\MenuDisappearStateClass.h" />
+    <ClInclude Include="source\MenuVanishStateClass.h" />
+    <ClInclude Include="source\MenuWaitStateClass.h" />
+    <ClInclude Include="source\ShutDownStateClass.h" />
+    <ClInclude Include="source\StartButtonAppearStateClass.h" />
+    <ClInclude Include="source\StartButtonVanishStateClass.h" />
+    <ClInclude Include="source\StartButtonWaitStateClass.h" />
+    <ClInclude Include="source\StartButtonZoomInStateClass.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gfx\BeginnerPlusIntermediate.grit" />
+    <None Include="gfx\BeginnerPlusIntermediate.png" />
+    <None Include="gfx\BestScoresPlusExpertPlusInsane.grit" />
+    <None Include="gfx\BestScoresPlusExpertPlusInsane.png" />
+    <None Include="gfx\Bomb.grit" />
+    <None Include="gfx\Bomb.png" />
+    <None Include="gfx\Eight.grit" />
+    <None Include="gfx\Eight.png" />
+    <None Include="gfx\Five.grit" />
+    <None Include="gfx\Five.png" />
+    <None Include="gfx\Flag.grit" />
+    <None Include="gfx\Flag.png" />
+    <None Include="gfx\Four.grit" />
+    <None Include="gfx\Four.png" />
+    <None Include="gfx\Legend.grit" />
+    <None Include="gfx\Legend.png" />
+    <None Include="gfx\Logo.grit" />
+    <None Include="gfx\Logo.png" />
+    <None Include="gfx\LogoSmall.grit" />
+    <None Include="gfx\LogoSmall.png" />
+    <None Include="gfx\Menu.grit" />
+    <None Include="gfx\Menu.png" />
+    <None Include="gfx\One.grit" />
+    <None Include="gfx\One.png" />
+    <None Include="gfx\Question.grit" />
+    <None Include="gfx\Question.png" />
+    <None Include="gfx\SelectedItem.grit" />
+    <None Include="gfx\SelectedItem.png" />
+    <None Include="gfx\Seven.grit" />
+    <None Include="gfx\Seven.png" />
+    <None Include="gfx\Six.grit" />
+    <None Include="gfx\Six.png" />
+    <None Include="gfx\Start.grit" />
+    <None Include="gfx\Start.png" />
+    <None Include="gfx\Three.grit" />
+    <None Include="gfx\Three.png" />
+    <None Include="gfx\Time0.grit" />
+    <None Include="gfx\Time0.png" />
+    <None Include="gfx\Time1.grit" />
+    <None Include="gfx\Time1.png" />
+    <None Include="gfx\Time2.grit" />
+    <None Include="gfx\Time2.png" />
+    <None Include="gfx\Time3.grit" />
+    <None Include="gfx\Time3.png" />
+    <None Include="gfx\Time4.grit" />
+    <None Include="gfx\Time4.png" />
+    <None Include="gfx\Time5.grit" />
+    <None Include="gfx\Time5.png" />
+    <None Include="gfx\Time6.grit" />
+    <None Include="gfx\Time6.png" />
+    <None Include="gfx\Time7.grit" />
+    <None Include="gfx\Time7.png" />
+    <None Include="gfx\Time8.grit" />
+    <None Include="gfx\Time8.png" />
+    <None Include="gfx\Time9.grit" />
+    <None Include="gfx\Time9.png" />
+    <None Include="gfx\TimeColon.grit" />
+    <None Include="gfx\TimeColon.png" />
+    <None Include="gfx\Two.grit" />
+    <None Include="gfx\Two.png" />
+    <None Include="gfx\UnselectedItem.grit" />
+    <None Include="gfx\UnselectedItem.png" />
+    <None Include="gfx\YouLose.grit" />
+    <None Include="gfx\YouLose.png" />
+    <None Include="gfx\YouWin.grit" />
+    <None Include="gfx\YouWin.png" />
+    <None Include="LICENSE.txt" />
+    <None Include="Makefile" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
