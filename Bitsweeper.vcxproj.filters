@@ -1,0 +1,547 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\States">
+      <UniqueIdentifier>{8f9a926f-2030-479e-8de1-a9833f6ea8f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\States">
+      <UniqueIdentifier>{e4e10ce4-3e0e-4739-b323-11f10a8dc006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ArithmeticsClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BestScoresLineClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BestScoresTableClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BoardCellClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\CommonDataClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LinearEvaluatorClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MainEntryPoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\OperationsClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\PolySaveManagerClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\RandomNumberGeneratorClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StateClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StateMachineClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\TrigonometryClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BackgroundFadeInStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BackgroundFadeOutStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BestScoresTableAppearStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BestScoresTableDisappearStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BestScoresTableWaitStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BoardAppearStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BoardCellChangeAppearStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BoardCellChangeDisappearStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BoardCellExplodeStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BoardCellUncoverStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BoardDisappearStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\BoardWaitStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameLostAppearStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameLostDisappearStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameLostNotVisibleWaitStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameLostVanishStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameLostVisibleWaitStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameWonAppearStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameWonDisappearStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameWonNotVisibleWaitStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameWonVanishStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\GameWonVisibleWaitStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LegendAppearStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LegendDisappearStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LegendVanishStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LogoAndStartButtonVanishStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LogoEnlargeStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LogoShrinkStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\LogoZoomInStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MenuAppearStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MenuDisappearStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MenuVanishStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\MenuWaitStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\ShutDownStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StartButtonAppearStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StartButtonVanishStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StartButtonWaitStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+    <ClCompile Include="source\StartButtonZoomInStateClass.cpp">
+      <Filter>Source Files\States</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\ArithmeticsClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BestScoresLineClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BestScoresLineLevelEnum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BestScoresTableClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BoardCellClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BoardCellStateEnum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\CommonDataClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ImageIncludes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\LinearEvaluatorClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\OperationsClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PolySaveManagerClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\PolySaveManagerErrorsEnum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\RandomNumberGeneratorClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StateClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StateIncludes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StateMachineClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\TrigonometryClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BackgroundFadeInStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BackgroundFadeOutStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BestScoresTableAppearStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BestScoresTableDisappearStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BestScoresTableWaitStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BoardAppearStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BoardCellChangeAppearStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BoardCellChangeDisappearStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BoardCellExplodeStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BoardCellUncoverStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BoardDisappearStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\BoardWaitStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GameLostAppearStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GameLostDisappearStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GameLostNotVisibleWaitStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GameLostVanishStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GameLostVisibleWaitStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GameWonAppearStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GameWonDisappearStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GameWonNotVisibleWaitStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GameWonVanishStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\GameWonVisibleWaitStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\LegendAppearStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\LegendDisappearStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\LegendVanishStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\LogoAndStartButtonVanishStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\LogoEnlargeStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\LogoShrinkStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\LogoZoomInStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MenuAppearStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MenuDisappearStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MenuVanishStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\MenuWaitStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\ShutDownStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StartButtonAppearStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StartButtonVanishStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StartButtonWaitStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+    <ClInclude Include="source\StartButtonZoomInStateClass.h">
+      <Filter>Header Files\States</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gfx\BeginnerPlusIntermediate.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\BestScoresPlusExpertPlusInsane.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Bomb.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Eight.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Five.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Flag.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Four.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Legend.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Logo.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\LogoSmall.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Menu.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\One.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Question.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\SelectedItem.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Seven.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Six.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Start.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Three.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time0.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time1.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time2.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time3.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time4.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time5.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time6.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time7.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time8.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time9.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\TimeColon.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Two.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\UnselectedItem.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\YouLose.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\YouWin.grit">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="LICENSE.txt" />
+    <None Include="gfx\BeginnerPlusIntermediate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\BestScoresPlusExpertPlusInsane.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Bomb.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Eight.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Five.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Flag.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Four.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Legend.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Logo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\LogoSmall.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Menu.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\One.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Question.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\SelectedItem.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Seven.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Six.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Start.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Three.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time0.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time3.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time4.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time5.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time6.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time7.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time8.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Time9.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\TimeColon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\Two.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\UnselectedItem.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\YouLose.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="gfx\YouWin.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Makefile" />
+  </ItemGroup>
+</Project>
