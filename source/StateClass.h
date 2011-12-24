@@ -4,9 +4,9 @@
 class StateClass
 {
 public:
-	virtual bool Start(class CommonDataClass* CommonData) = 0;
+	virtual void Start(class CommonDataClass* CommonData) = 0;
 
-	virtual bool Run(CommonDataClass* CommonData) = 0;
+	virtual void Run(CommonDataClass* CommonData) = 0;
 
 	virtual void Draw(CommonDataClass* CommonData) = 0;
 

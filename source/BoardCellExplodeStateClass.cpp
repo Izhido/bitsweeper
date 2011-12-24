@@ -12,7 +12,7 @@ BoardCellExplodeStateClass::BoardCellExplodeStateClass()
 {
 }
 
-bool BoardCellExplodeStateClass::Start(CommonDataClass* CommonData)
+void BoardCellExplodeStateClass::Start(CommonDataClass* CommonData)
 {
 	double Radius;
 
@@ -20,10 +20,9 @@ bool BoardCellExplodeStateClass::Start(CommonDataClass* CommonData)
 	Radius = CommonData->RandomNumberGenerator->Next() * 2 * CommonData->Trigonometry.Pi;
 	XDisplacement = floattov16(CommonData->Trigonometry.Cos(Radius) * 0.01);
 	ZDisplacement = floattov16(CommonData->Trigonometry.Sin(Radius) * 0.01);
-	return true;
 }
 
-bool BoardCellExplodeStateClass::Run(CommonDataClass* CommonData)
+void BoardCellExplodeStateClass::Run(CommonDataClass* CommonData)
 {
 	double Radius;
 
@@ -37,7 +36,6 @@ bool BoardCellExplodeStateClass::Run(CommonDataClass* CommonData)
 		CommonData->VerticalScrollCount = 0;
 		CommonData->StateMachine->Switch(GAME_LOST_APPEAR_STATE);
 	};
-	return true;
 }
 
 void BoardCellExplodeStateClass::Draw(CommonDataClass* CommonData)

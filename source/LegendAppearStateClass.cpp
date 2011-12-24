@@ -9,20 +9,18 @@ LegendAppearStateClass::LegendAppearStateClass()
 {
 }
 
-bool LegendAppearStateClass::Start(CommonDataClass* CommonData)
+void LegendAppearStateClass::Start(CommonDataClass* CommonData)
 {
 	Count = 0;
-	return true;
 }
 
-bool LegendAppearStateClass::Run(CommonDataClass* CommonData)
+void LegendAppearStateClass::Run(CommonDataClass* CommonData)
 {
 	Count++;
 	if(Count >= 4)
 	{
 		CommonData->StateMachine->Switch(START_BUTTON_WAIT_STATE);
 	};
-	return true;
 }
 
 void LegendAppearStateClass::Draw(CommonDataClass* CommonData)

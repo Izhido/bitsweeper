@@ -11,12 +11,11 @@ StartButtonWaitStateClass::StartButtonWaitStateClass()
 {
 }
 
-bool StartButtonWaitStateClass::Start(CommonDataClass* CommonData)
+void StartButtonWaitStateClass::Start(CommonDataClass* CommonData)
 {
-	return true;
 }
 
-bool StartButtonWaitStateClass::Run(CommonDataClass* CommonData)
+void StartButtonWaitStateClass::Run(CommonDataClass* CommonData)
 {
 	if(((CommonData->KeysHeld & KEY_A) != 0)||((CommonData->KeysHeld & KEY_Y) != 0))
 	{
@@ -41,7 +40,6 @@ bool StartButtonWaitStateClass::Run(CommonDataClass* CommonData)
 	{
 		CommonData->LegendX = CommonData->LegendX - 0.4;
 	};
-	return true;
 }
 
 void StartButtonWaitStateClass::Draw(CommonDataClass* CommonData)

@@ -123,11 +123,11 @@ void OperationsClass::DrawSmallUpperLeftLogo(CommonDataClass* CommonData)
 	glBegin(GL_QUADS);
 	glTexCoord2t16(inttot16(10), inttot16(5));
 	glVertex3f(-0.09 + CommonData->LocationX, 0.001, 0.16 + CommonData->LocationZ);
-	glTexCoord2t16(inttot16(10), inttot16(28));
+	glTexCoord2t16(inttot16(10), inttot16(27));
 	glVertex3f(-0.09 + CommonData->LocationX, 0.001, 0.1425 + CommonData->LocationZ);
-	glTexCoord2t16(inttot16(55), inttot16(28));
+	glTexCoord2t16(inttot16(54), inttot16(27));
 	glVertex3f(-0.055 + CommonData->LocationX, 0.001, 0.1425 + CommonData->LocationZ);
-	glTexCoord2t16(inttot16(55), inttot16(5));
+	glTexCoord2t16(inttot16(54), inttot16(5));
 	glVertex3f(-0.055 + CommonData->LocationX, 0.001, 0.16 + CommonData->LocationZ);
 	glEnd();
 }
@@ -138,9 +138,9 @@ void OperationsClass::DrawLargeCenteredLogo(CommonDataClass* CommonData)
 	glBegin(GL_QUADS);
 	glTexCoord2t16(inttot16(32), inttot16(16));
 	glVertex3f(-0.075, 0.001, 0.1375);
-	glTexCoord2t16(inttot16(32), inttot16(113));
+	glTexCoord2t16(inttot16(32), inttot16(112));
 	glVertex3f(-0.075, 0.001, 0.0625);
-	glTexCoord2t16(inttot16(225), inttot16(113));
+	glTexCoord2t16(inttot16(225), inttot16(112));
 	glVertex3f(0.075, 0.001, 0.0625);
 	glTexCoord2t16(inttot16(225), inttot16(16));
 	glVertex3f(0.075, 0.001, 0.1375);

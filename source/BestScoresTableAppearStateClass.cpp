@@ -13,7 +13,7 @@ BestScoresTableAppearStateClass::BestScoresTableAppearStateClass()
 {
 }
 
-bool BestScoresTableAppearStateClass::Start(CommonDataClass* CommonData)
+void BestScoresTableAppearStateClass::Start(CommonDataClass* CommonData)
 {
 	BestScoresTableClass* BestScoresTable;
 	bool ReadSuccesful;
@@ -134,10 +134,9 @@ bool BestScoresTableAppearStateClass::Start(CommonDataClass* CommonData)
 		delete[] Buffer;
 	};
 	Count = 0;
-	return true;
 }
 
-bool BestScoresTableAppearStateClass::Run(CommonDataClass* CommonData)
+void BestScoresTableAppearStateClass::Run(CommonDataClass* CommonData)
 {
 	Count++;
 	if(Count >= 10)
@@ -147,7 +146,6 @@ bool BestScoresTableAppearStateClass::Run(CommonDataClass* CommonData)
 	};
 	Operations::UpdateBoardLocation(CommonData);
 	Operations::UpdateBoardCellBorders(CommonData);
-	return true;
 }
 
 void BestScoresTableAppearStateClass::Draw(CommonDataClass* CommonData)

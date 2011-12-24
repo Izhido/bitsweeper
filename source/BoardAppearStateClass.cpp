@@ -14,7 +14,7 @@ BoardAppearStateClass::BoardAppearStateClass()
 {
 }
 
-bool BoardAppearStateClass::Start(CommonDataClass* CommonData)
+void BoardAppearStateClass::Start(CommonDataClass* CommonData)
 {
 	int Exploding;
 	int i;
@@ -167,17 +167,15 @@ bool BoardAppearStateClass::Start(CommonDataClass* CommonData)
 	Appearing.Finish[13] = 156.0 / 255.0;
 	Appearing.Finish[14] = 122.0 / 255.0;
 	Appearing.SetMax(10);
-	return true;
 }
 
-bool BoardAppearStateClass::Run(CommonDataClass* CommonData)
+void BoardAppearStateClass::Run(CommonDataClass* CommonData)
 {
 	Appearing.Step();
 	if(Appearing.Finished())
 	{
 		CommonData->StateMachine->Switch(LOGO_SHRINK_STATE);
 	};
-	return true;
 }
 
 void BoardAppearStateClass::Draw(CommonDataClass* CommonData)

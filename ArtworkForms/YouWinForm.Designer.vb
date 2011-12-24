@@ -22,9 +22,9 @@ Partial Class YouWinForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -53,7 +53,7 @@ Partial Class YouWinForm
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Webdings", 36.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(2, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.DarkGray
+        Me.Label3.ForeColor = System.Drawing.Color.Gold
         Me.Label3.Location = New System.Drawing.Point(61, 4)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(70, 49)
@@ -64,13 +64,13 @@ Partial Class YouWinForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.InactiveCaptionText
-        Me.ClientSize = New System.Drawing.Size(118, 54)
+        Me.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.ClientSize = New System.Drawing.Size(122, 58)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Label3)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "YouWinForm"
         Me.ShowIcon = False
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

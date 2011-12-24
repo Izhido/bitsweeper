@@ -10,13 +10,12 @@ BestScoresTableDisappearStateClass::BestScoresTableDisappearStateClass()
 {
 }
 
-bool BestScoresTableDisappearStateClass::Start(CommonDataClass* CommonData)
+void BestScoresTableDisappearStateClass::Start(CommonDataClass* CommonData)
 {
 	Count = 0;
-	return true;
 }
 
-bool BestScoresTableDisappearStateClass::Run(CommonDataClass* CommonData)
+void BestScoresTableDisappearStateClass::Run(CommonDataClass* CommonData)
 {
 	Count++;
 	if(Count >= 10)
@@ -25,7 +24,6 @@ bool BestScoresTableDisappearStateClass::Run(CommonDataClass* CommonData)
 	};
 	Operations::UpdateBoardLocation(CommonData);
 	Operations::UpdateBoardCellBorders(CommonData);
-	return true;
 }
 
 void BestScoresTableDisappearStateClass::Draw(CommonDataClass* CommonData)

@@ -33,8 +33,6 @@ public:
 
 	bool ToBottomScreen;
 
-	bool DrawAgain;
-
 	uint32 KeysHeld;
 
 	int16 TouchX;

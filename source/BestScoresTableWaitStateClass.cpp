@@ -12,12 +12,11 @@ BestScoresTableWaitStateClass::BestScoresTableWaitStateClass()
 {
 }
 
-bool BestScoresTableWaitStateClass::Start(CommonDataClass* CommonData)
+void BestScoresTableWaitStateClass::Start(CommonDataClass* CommonData)
 {
-	return true;
 }
 
-bool BestScoresTableWaitStateClass::Run(CommonDataClass* CommonData)
+void BestScoresTableWaitStateClass::Run(CommonDataClass* CommonData)
 {
 	if((CommonData->TouchX >= 64) && (CommonData->TouchX < 192) && (CommonData->TouchY >= 64) && (CommonData->TouchY < 128))
 	{
@@ -63,7 +62,6 @@ bool BestScoresTableWaitStateClass::Run(CommonDataClass* CommonData)
 	};
 	Operations::UpdateBoardLocation(CommonData);
 	Operations::UpdateBoardCellBorders(CommonData);
-	return true;
 }
 
 void BestScoresTableWaitStateClass::Draw(CommonDataClass* CommonData)

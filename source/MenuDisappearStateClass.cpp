@@ -9,7 +9,7 @@ MenuDisappearStateClass::MenuDisappearStateClass()
 {
 }
 
-bool MenuDisappearStateClass::Start(CommonDataClass* CommonData)
+void MenuDisappearStateClass::Start(CommonDataClass* CommonData)
 {
 	Disappearing.SetLength(4);
 	Disappearing.Start[0] = -0.05;
@@ -21,17 +21,15 @@ bool MenuDisappearStateClass::Start(CommonDataClass* CommonData)
 	Disappearing.Finish[2] = -0.25;
 	Disappearing.Finish[3] = -0.15;
 	Disappearing.SetMax(10);
-	return true;
 }
 
-bool MenuDisappearStateClass::Run(CommonDataClass* CommonData)
+void MenuDisappearStateClass::Run(CommonDataClass* CommonData)
 {
 	Disappearing.Step();
 	if(Disappearing.Finished())
 	{
 		CommonData->StateMachine->Switch(BOARD_APPEAR_STATE);
 	};
-	return true;
 }
 
 void MenuDisappearStateClass::Draw(CommonDataClass* CommonData)

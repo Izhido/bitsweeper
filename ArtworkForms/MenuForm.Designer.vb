@@ -22,23 +22,23 @@ Partial Class MenuForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton
-        Me.Button1 = New System.Windows.Forms.Button
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton
-        Me.RadioButton5 = New System.Windows.Forms.RadioButton
-        Me.RadioButton6 = New System.Windows.Forms.RadioButton
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton5 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'RadioButton1
         '
         Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.Location = New System.Drawing.Point(5, 1)
+        Me.RadioButton1.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton1.Location = New System.Drawing.Point(9, 1)
         Me.RadioButton1.Margin = New System.Windows.Forms.Padding(4)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(83, 17)
+        Me.RadioButton1.Size = New System.Drawing.Size(69, 18)
         Me.RadioButton1.TabIndex = 0
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Beginner"
@@ -47,11 +47,11 @@ Partial Class MenuForm
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.Location = New System.Drawing.Point(5, 16)
+        Me.RadioButton2.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton2.Location = New System.Drawing.Point(9, 16)
         Me.RadioButton2.Margin = New System.Windows.Forms.Padding(4)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(111, 17)
+        Me.RadioButton2.Size = New System.Drawing.Size(89, 18)
         Me.RadioButton2.TabIndex = 1
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "Intermediate"
@@ -60,11 +60,11 @@ Partial Class MenuForm
         'RadioButton3
         '
         Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton3.Location = New System.Drawing.Point(5, 31)
+        Me.RadioButton3.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton3.Location = New System.Drawing.Point(9, 31)
         Me.RadioButton3.Margin = New System.Windows.Forms.Padding(4)
         Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(68, 17)
+        Me.RadioButton3.Size = New System.Drawing.Size(57, 18)
         Me.RadioButton3.TabIndex = 2
         Me.RadioButton3.TabStop = True
         Me.RadioButton3.Text = "Expert"
@@ -72,7 +72,7 @@ Partial Class MenuForm
         '
         'Button1
         '
-        Me.Button1.Font = New System.Drawing.Font("Stencil", 18.0!, System.Drawing.FontStyle.Bold)
+        Me.Button1.Font = New System.Drawing.Font("Stencil", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Crimson
         Me.Button1.Location = New System.Drawing.Point(6, 63)
         Me.Button1.Margin = New System.Windows.Forms.Padding(4)
@@ -86,11 +86,11 @@ Partial Class MenuForm
         'RadioButton4
         '
         Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton4.Location = New System.Drawing.Point(5, 46)
+        Me.RadioButton4.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton4.Location = New System.Drawing.Point(9, 46)
         Me.RadioButton4.Margin = New System.Windows.Forms.Padding(4)
         Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(74, 17)
+        Me.RadioButton4.Size = New System.Drawing.Size(61, 18)
         Me.RadioButton4.TabIndex = 4
         Me.RadioButton4.TabStop = True
         Me.RadioButton4.Text = "Insane!"
@@ -98,7 +98,7 @@ Partial Class MenuForm
         '
         'RadioButton5
         '
-        Me.RadioButton5.Font = New System.Drawing.Font("Century Gothic", 6.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton5.Font = New System.Drawing.Font("Calibri", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton5.Location = New System.Drawing.Point(2, 91)
         Me.RadioButton5.Margin = New System.Windows.Forms.Padding(4)
         Me.RadioButton5.Name = "RadioButton5"
@@ -110,8 +110,9 @@ Partial Class MenuForm
         '
         'RadioButton6
         '
+        Me.RadioButton6.BackColor = System.Drawing.Color.Transparent
         Me.RadioButton6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.RadioButton6.Font = New System.Drawing.Font("Century Gothic", 6.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RadioButton6.Font = New System.Drawing.Font("Calibri", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton6.Location = New System.Drawing.Point(59, 91)
         Me.RadioButton6.Margin = New System.Windows.Forms.Padding(4)
         Me.RadioButton6.Name = "RadioButton6"
@@ -120,25 +121,25 @@ Partial Class MenuForm
         Me.RadioButton6.TabStop = True
         Me.RadioButton6.Text = "Right Handed"
         Me.RadioButton6.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.RadioButton6.UseVisualStyleBackColor = True
+        Me.RadioButton6.UseVisualStyleBackColor = False
         '
         'MenuForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.InactiveCaptionText
-        Me.ClientSize = New System.Drawing.Size(118, 118)
+        Me.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.ClientSize = New System.Drawing.Size(122, 122)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.RadioButton6)
         Me.Controls.Add(Me.RadioButton5)
         Me.Controls.Add(Me.RadioButton4)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.RadioButton3)
         Me.Controls.Add(Me.RadioButton2)
         Me.Controls.Add(Me.RadioButton1)
-        Me.Font = New System.Drawing.Font("Verdana", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ForeColor = System.Drawing.SystemColors.Desktop
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.KeyPreview = True
         Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "MenuForm"

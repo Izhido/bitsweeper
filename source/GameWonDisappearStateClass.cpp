@@ -11,13 +11,12 @@ GameWonDisappearStateClass::GameWonDisappearStateClass()
 {
 }
 
-bool GameWonDisappearStateClass::Start(CommonDataClass* CommonData)
+void GameWonDisappearStateClass::Start(CommonDataClass* CommonData)
 {
 	Count = 0;
-	return true;
 }
 
-bool GameWonDisappearStateClass::Run(CommonDataClass* CommonData)
+void GameWonDisappearStateClass::Run(CommonDataClass* CommonData)
 {
 	Count++;
 	if(Count >= 15)
@@ -26,7 +25,6 @@ bool GameWonDisappearStateClass::Run(CommonDataClass* CommonData)
 	};
 	Operations::DoBoardScrolling(CommonData);
 	Operations::UpdateBoardCellBorders(CommonData);
-	return true;
 }
 
 void GameWonDisappearStateClass::Draw(CommonDataClass* CommonData)

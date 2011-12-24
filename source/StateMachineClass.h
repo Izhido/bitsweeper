@@ -6,7 +6,7 @@ class StateMachineClass
 public:
 	StateMachineClass();
 
-	bool Run(class CommonDataClass* CommonData);
+	void Run(class CommonDataClass* CommonData);
 
 	void Draw(class CommonDataClass* CommonData);
 

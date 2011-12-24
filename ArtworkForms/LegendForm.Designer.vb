@@ -33,7 +33,7 @@ Partial Class LegendForm
         Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Margin = New System.Windows.Forms.Padding(0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(512, 26)
+        Me.Label1.Size = New System.Drawing.Size(512, 32)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "(c) 2007 - 2011 Heriberto Delgado. All rights reserved. Based on the popular Mine" & _
     "sweeper game. "
@@ -42,13 +42,13 @@ Partial Class LegendForm
         '
         'LegendForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(5.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightGreen
-        Me.ClientSize = New System.Drawing.Size(512, 26)
+        Me.ClientSize = New System.Drawing.Size(512, 32)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label1)
-        Me.Font = New System.Drawing.Font("Arial Narrow", 8.0!)
+        Me.Font = New System.Drawing.Font("Calibri", 8.25!)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Margin = New System.Windows.Forms.Padding(1, 2, 1, 2)
         Me.Name = "LegendForm"

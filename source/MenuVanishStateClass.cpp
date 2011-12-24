@@ -9,7 +9,7 @@ MenuVanishStateClass::MenuVanishStateClass()
 {
 }
 
-bool MenuVanishStateClass::Start(CommonDataClass* CommonData)
+void MenuVanishStateClass::Start(CommonDataClass* CommonData)
 {
 	Vanishing.SetLength(2);
 	Vanishing.Start[0] = -0.05;
@@ -17,17 +17,15 @@ bool MenuVanishStateClass::Start(CommonDataClass* CommonData)
 	Vanishing.Finish[0] = 0;
 	Vanishing.Finish[1] = 0;
 	Vanishing.SetMax(10);
-	return true;
 }
 
-bool MenuVanishStateClass::Run(CommonDataClass* CommonData)
+void MenuVanishStateClass::Run(CommonDataClass* CommonData)
 {
 	Vanishing.Step();
 	if(Vanishing.Finished())
 	{
 		CommonData->StateMachine->Switch(START_BUTTON_APPEAR_STATE);
 	};
-	return true;
 }
 
 void MenuVanishStateClass::Draw(CommonDataClass* CommonData)
