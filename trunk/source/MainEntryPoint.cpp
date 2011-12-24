@@ -44,7 +44,6 @@ int main(int argc, char* argv[])
 	glClearDepth(GL_MAX_DEPTH);
 	glClearPolyID(63);
 	CommonData = new CommonDataClass();
-	irqInit();
 	irqSet(IRQ_VBLANK, &DoVBlank);
 	CommonData->FilesystemEnabled = fatInitDefault();
 	while(!(CommonData->Finished)) 
@@ -67,19 +66,10 @@ int main(int argc, char* argv[])
 			scanKeys();
 			CurrentKeysHeld = keysHeld();
 			touchRead(&CurrentTouchPosition);
-			if((CommonData->KeysHeld != CurrentKeysHeld) 
-			|| (CommonData->TouchX != CurrentTouchPosition.rawx) 
-			|| (CommonData->TouchY != CurrentTouchPosition.rawy))
-			{
-				CommonData->DrawAgain = true;
-			};
 			CommonData->KeysHeld = CurrentKeysHeld;
 			CommonData->TouchX = CurrentTouchPosition.px;
 			CommonData->TouchY = CurrentTouchPosition.py;
-			if(CommonData->DrawAgain)
-			{
-				CommonData->DrawAgain = CommonData->StateMachine->Run(CommonData);
-			};
+			CommonData->StateMachine->Run(CommonData);
 		}
 		glMatrixMode(GL_PROJECTION);
 		glLoadIdentity();
@@ -105,5 +95,6 @@ int main(int argc, char* argv[])
 		CommonData->StateMachine->Draw(CommonData);
 		glFlush(0);
 	};
+
 	return 0;
 }

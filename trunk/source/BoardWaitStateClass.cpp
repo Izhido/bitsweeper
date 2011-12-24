@@ -14,7 +14,7 @@ BoardWaitStateClass::BoardWaitStateClass()
 {
 }
 
-bool BoardWaitStateClass::Start(CommonDataClass* CommonData)
+void BoardWaitStateClass::Start(CommonDataClass* CommonData)
 {
 	int ElapsedTime;
 	int ElapsedSeconds;
@@ -38,10 +38,9 @@ bool BoardWaitStateClass::Start(CommonDataClass* CommonData)
 			CommonData->LimitTimeReached = true;
 		};
 	};
-	return true;
 }
 
-bool BoardWaitStateClass::Run(CommonDataClass* CommonData)
+void BoardWaitStateClass::Run(CommonDataClass* CommonData)
 {
 	int x;
 	int z;
@@ -118,7 +117,6 @@ bool BoardWaitStateClass::Run(CommonDataClass* CommonData)
 			CommonData->LimitTimeReached = true;
 		};
 	};
-	return true;
 }
 
 void BoardWaitStateClass::Draw(CommonDataClass* CommonData)

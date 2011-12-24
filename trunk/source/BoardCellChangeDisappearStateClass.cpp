@@ -11,13 +11,12 @@ BoardCellChangeDisappearStateClass::BoardCellChangeDisappearStateClass()
 {
 }
 
-bool BoardCellChangeDisappearStateClass::Start(CommonDataClass* CommonData)
+void BoardCellChangeDisappearStateClass::Start(CommonDataClass* CommonData)
 {
 	Count = 0;
-	return true;
 }
 
-bool BoardCellChangeDisappearStateClass::Run(CommonDataClass* CommonData)
+void BoardCellChangeDisappearStateClass::Run(CommonDataClass* CommonData)
 {
 	Count++;
 	if(Count >= 5)
@@ -36,7 +35,6 @@ bool BoardCellChangeDisappearStateClass::Run(CommonDataClass* CommonData)
 			CommonData->StateMachine->Switch(BOARD_CELL_CHANGE_APPEAR_STATE);
 		};
 	};
-	return true;
 }
 
 void BoardCellChangeDisappearStateClass::Draw(CommonDataClass* CommonData)

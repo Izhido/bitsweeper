@@ -9,20 +9,18 @@ LegendVanishStateClass::LegendVanishStateClass()
 {
 }
 
-bool LegendVanishStateClass::Start(CommonDataClass* CommonData)
+void LegendVanishStateClass::Start(CommonDataClass* CommonData)
 {
 	Count = 0;
-	return true;
 }
 
-bool LegendVanishStateClass::Run(CommonDataClass* CommonData)
+void LegendVanishStateClass::Run(CommonDataClass* CommonData)
 {
 	Count++;
 	if(Count >= 4)
 	{
 		CommonData->StateMachine->Switch(LOGO_AND_START_BUTTON_VANISH_STATE);
 	};
-	return true;
 }
 
 void LegendVanishStateClass::Draw(CommonDataClass* CommonData)

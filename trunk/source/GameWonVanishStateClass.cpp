@@ -10,13 +10,12 @@ GameWonVanishStateClass::GameWonVanishStateClass()
 {
 }
 
-bool GameWonVanishStateClass::Start(CommonDataClass* CommonData)
+void GameWonVanishStateClass::Start(CommonDataClass* CommonData)
 {
 	Count = 0;
-	return true;
 }
 
-bool GameWonVanishStateClass::Run(CommonDataClass* CommonData)
+void GameWonVanishStateClass::Run(CommonDataClass* CommonData)
 {
 	Count++;
 	if(Count >= 10)
@@ -25,7 +24,6 @@ bool GameWonVanishStateClass::Run(CommonDataClass* CommonData)
 	};
 	Operations::UpdateBoardLocation(CommonData);
 	Operations::UpdateBoardCellBorders(CommonData);
-	return true;
 }
 
 void GameWonVanishStateClass::Draw(CommonDataClass* CommonData)

@@ -12,7 +12,7 @@ BoardCellUncoverStateClass::BoardCellUncoverStateClass()
 {
 }
 
-bool BoardCellUncoverStateClass::Start(CommonDataClass* CommonData)
+void BoardCellUncoverStateClass::Start(CommonDataClass* CommonData)
 {
 	int i;
 	int j;
@@ -269,10 +269,9 @@ bool BoardCellUncoverStateClass::Start(CommonDataClass* CommonData)
 	Uncovering.Finish[11] = 160.0 / 255.0;
 	Uncovering.Finish[12] = 0;
 	Uncovering.SetMax(5);
-	return true;
 }
 
-bool BoardCellUncoverStateClass::Run(CommonDataClass* CommonData)
+void BoardCellUncoverStateClass::Run(CommonDataClass* CommonData)
 {
 	int i;
 
@@ -317,7 +316,6 @@ bool BoardCellUncoverStateClass::Run(CommonDataClass* CommonData)
 		};
 		CommonData->CellsBeingUncoveredSize = 0;
 	};
-	return true;
 }
 
 void BoardCellUncoverStateClass::Draw(CommonDataClass* CommonData)

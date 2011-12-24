@@ -11,7 +11,7 @@ BoardDisappearStateClass::BoardDisappearStateClass()
 {
 }
 
-bool BoardDisappearStateClass::Start(CommonDataClass* CommonData)
+void BoardDisappearStateClass::Start(CommonDataClass* CommonData)
 {
 	int i;
 
@@ -40,10 +40,9 @@ bool BoardDisappearStateClass::Start(CommonDataClass* CommonData)
 	};
 	Disappearing.Finish[15] = 0.06;
 	Disappearing.SetMax(10);
-	return true;
 }
 
-bool BoardDisappearStateClass::Run(CommonDataClass* CommonData)
+void BoardDisappearStateClass::Run(CommonDataClass* CommonData)
 {
 	Disappearing.Step();
 	if(Disappearing.Finished())
@@ -61,7 +60,6 @@ bool BoardDisappearStateClass::Run(CommonDataClass* CommonData)
 		CommonData->LocationZ = 0;
 		CommonData->StateMachine->Switch(LOGO_ENLARGE_STATE);
 	};
-	return true;
 }
 
 void BoardDisappearStateClass::Draw(CommonDataClass* CommonData)

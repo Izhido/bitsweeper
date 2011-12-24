@@ -11,7 +11,7 @@ MenuWaitStateClass::MenuWaitStateClass()
 {
 }
 
-bool MenuWaitStateClass::Start(CommonDataClass* CommonData)
+void MenuWaitStateClass::Start(CommonDataClass* CommonData)
 {
 	LButtonPressed = false;
 	RButtonPressed = false;
@@ -23,10 +23,9 @@ bool MenuWaitStateClass::Start(CommonDataClass* CommonData)
 		};
 		CommonData->LastGameWon = false;
 	};
-	return true;
 }
 
-bool MenuWaitStateClass::Run(CommonDataClass* CommonData)
+void MenuWaitStateClass::Run(CommonDataClass* CommonData)
 {
 	if(((CommonData->KeysHeld & KEY_A) != 0)||((CommonData->KeysHeld & KEY_Y) != 0))
 	{
@@ -54,10 +53,10 @@ bool MenuWaitStateClass::Run(CommonDataClass* CommonData)
 	} else if((CommonData->TouchX >= 77) && (CommonData->TouchX < 180) && (CommonData->TouchY >= 102) && (CommonData->TouchY < 128))
 	{
 		CommonData->StateMachine->Switch(MENU_DISAPPEAR_STATE);
-	} else if((CommonData->TouchX >= 73) && (CommonData->TouchX < 128) && (CommonData->TouchY >= 130) && (CommonData->TouchY < 159))
+	} else if((CommonData->TouchX >= 70) && (CommonData->TouchX < 128) && (CommonData->TouchY >= 130) && (CommonData->TouchY < 159))
 	{
 		CommonData->IsLeftHanded = true;
-	} else if((CommonData->TouchX >= 128) && (CommonData->TouchX < 183) && (CommonData->TouchY >= 130) && (CommonData->TouchY < 159))
+	} else if((CommonData->TouchX >= 128) && (CommonData->TouchX < 190) && (CommonData->TouchY >= 130) && (CommonData->TouchY < 159))
 	{
 		CommonData->IsLeftHanded = false;
 	};
@@ -89,7 +88,6 @@ bool MenuWaitStateClass::Run(CommonDataClass* CommonData)
 	{
 		RButtonPressed = false;
 	};
-	return true;
 }
 
 void MenuWaitStateClass::Draw(CommonDataClass* CommonData)
@@ -99,12 +97,12 @@ void MenuWaitStateClass::Draw(CommonDataClass* CommonData)
 	glBegin(GL_QUADS);
 	glTexCoord2t16(inttot16(0), inttot16(0));
 	glVertex3f(-0.05, 0.0, -0.05);
-	glTexCoord2t16(inttot16(0), inttot16(128));
+	glTexCoord2t16(inttot16(0), inttot16(127));
 	glVertex3f(-0.05, 0.0, -0.15);
-	glTexCoord2t16(inttot16(128), inttot16(128));
-	glVertex3f(0.0525, 0.0, -0.15);
-	glTexCoord2t16(inttot16(128), inttot16(0));
-	glVertex3f(0.0525, 0.0, -0.05);
+	glTexCoord2t16(inttot16(127), inttot16(127));
+	glVertex3f(0.055, 0.0, -0.15);
+	glTexCoord2t16(inttot16(127), inttot16(0));
+	glVertex3f(0.055, 0.0, -0.05);
 	glEnd();
 	if(CommonData->Level == 0)
 	{
@@ -115,13 +113,13 @@ void MenuWaitStateClass::Draw(CommonDataClass* CommonData)
 	};
 	glBegin(GL_QUADS);
 	glTexCoord2t16(inttot16(0), inttot16(0));
-	glVertex3f(-0.04, 0.001, -0.0555);
-	glTexCoord2t16(inttot16(0), inttot16(16));
-	glVertex3f(-0.04, 0.001, -0.0675);
-	glTexCoord2t16(inttot16(16), inttot16(16));
-	glVertex3f(-0.0275, 0.001, -0.0675);
-	glTexCoord2t16(inttot16(16), inttot16(0));
-	glVertex3f(-0.0275, 0.001, -0.0555);
+	glVertex3f(-0.04, 0.001, -0.0535);
+	glTexCoord2t16(inttot16(0), inttot16(15));
+	glVertex3f(-0.04, 0.001, -0.0655);
+	glTexCoord2t16(inttot16(15), inttot16(15));
+	glVertex3f(-0.0275, 0.001, -0.0655);
+	glTexCoord2t16(inttot16(15), inttot16(0));
+	glVertex3f(-0.0275, 0.001, -0.0535);
 	glEnd();
 	if(CommonData->Level == 1)
 	{
@@ -132,13 +130,13 @@ void MenuWaitStateClass::Draw(CommonDataClass* CommonData)
 	};
 	glBegin(GL_QUADS);
 	glTexCoord2t16(inttot16(0), inttot16(0));
-	glVertex3f(-0.04, 0.001, -0.0675);
-	glTexCoord2t16(inttot16(0), inttot16(16));
-	glVertex3f(-0.04, 0.001, -0.0795);
-	glTexCoord2t16(inttot16(16), inttot16(16));
-	glVertex3f(-0.0275, 0.001, -0.0795);
-	glTexCoord2t16(inttot16(16), inttot16(0));
-	glVertex3f(-0.0275, 0.001, -0.0675);
+	glVertex3f(-0.04, 0.001, -0.0655);
+	glTexCoord2t16(inttot16(0), inttot16(15));
+	glVertex3f(-0.04, 0.001, -0.0775);
+	glTexCoord2t16(inttot16(15), inttot16(15));
+	glVertex3f(-0.0275, 0.001, -0.0775);
+	glTexCoord2t16(inttot16(15), inttot16(0));
+	glVertex3f(-0.0275, 0.001, -0.0655);
 	glEnd();
 	if(CommonData->Level == 2)
 	{
@@ -149,13 +147,13 @@ void MenuWaitStateClass::Draw(CommonDataClass* CommonData)
 	};
 	glBegin(GL_QUADS);
 	glTexCoord2t16(inttot16(0), inttot16(0));
-	glVertex3f(-0.04, 0.001, -0.0795);
-	glTexCoord2t16(inttot16(0), inttot16(16));
-	glVertex3f(-0.04, 0.001, -0.0915);
-	glTexCoord2t16(inttot16(16), inttot16(16));
-	glVertex3f(-0.0275, 0.001, -0.0915);
-	glTexCoord2t16(inttot16(16), inttot16(0));
-	glVertex3f(-0.0275, 0.001, -0.0795);
+	glVertex3f(-0.04, 0.001, -0.0775);
+	glTexCoord2t16(inttot16(0), inttot16(15));
+	glVertex3f(-0.04, 0.001, -0.0895);
+	glTexCoord2t16(inttot16(15), inttot16(15));
+	glVertex3f(-0.0275, 0.001, -0.0895);
+	glTexCoord2t16(inttot16(15), inttot16(0));
+	glVertex3f(-0.0275, 0.001, -0.0775);
 	glEnd();
 	if(CommonData->Level == 3)
 	{
@@ -166,13 +164,13 @@ void MenuWaitStateClass::Draw(CommonDataClass* CommonData)
 	};
 	glBegin(GL_QUADS);
 	glTexCoord2t16(inttot16(0), inttot16(0));
-	glVertex3f(-0.04, 0.001, -0.0915);
-	glTexCoord2t16(inttot16(0), inttot16(16));
-	glVertex3f(-0.04, 0.001, -0.1035);
-	glTexCoord2t16(inttot16(16), inttot16(16));
-	glVertex3f(-0.0275, 0.001, -0.1035);
-	glTexCoord2t16(inttot16(16), inttot16(0));
-	glVertex3f(-0.0275, 0.001, -0.0915);
+	glVertex3f(-0.04, 0.001, -0.0895);
+	glTexCoord2t16(inttot16(0), inttot16(15));
+	glVertex3f(-0.04, 0.001, -0.1015);
+	glTexCoord2t16(inttot16(15), inttot16(15));
+	glVertex3f(-0.0275, 0.001, -0.1015);
+	glTexCoord2t16(inttot16(15), inttot16(0));
+	glVertex3f(-0.0275, 0.001, -0.0895);
 	glEnd();
 	if(CommonData->IsLeftHanded)
 	{
@@ -183,13 +181,13 @@ void MenuWaitStateClass::Draw(CommonDataClass* CommonData)
 	};
 	glBegin(GL_QUADS);
 	glTexCoord2t16(inttot16(0), inttot16(0));
-	glVertex3f(-0.0425, 0.001, -0.13);
-	glTexCoord2t16(inttot16(0), inttot16(16));
-	glVertex3f(-0.0425, 0.001, -0.1425);
-	glTexCoord2t16(inttot16(16), inttot16(16));
-	glVertex3f(-0.03, 0.001, -0.1425);
-	glTexCoord2t16(inttot16(16), inttot16(0));
-	glVertex3f(-0.03, 0.001, -0.13);
+	glVertex3f(-0.0455, 0.001, -0.13);
+	glTexCoord2t16(inttot16(0), inttot16(15));
+	glVertex3f(-0.0455, 0.001, -0.1425);
+	glTexCoord2t16(inttot16(15), inttot16(15));
+	glVertex3f(-0.0335, 0.001, -0.1425);
+	glTexCoord2t16(inttot16(15), inttot16(0));
+	glVertex3f(-0.0335, 0.001, -0.13);
 	glEnd();
 	if(CommonData->IsLeftHanded)
 	{
@@ -200,12 +198,12 @@ void MenuWaitStateClass::Draw(CommonDataClass* CommonData)
 	};
 	glBegin(GL_QUADS);
 	glTexCoord2t16(inttot16(0), inttot16(0));
-	glVertex3f(0.035, 0.001, -0.13);
-	glTexCoord2t16(inttot16(0), inttot16(16));
-	glVertex3f(0.035, 0.001, -0.1425);
-	glTexCoord2t16(inttot16(16), inttot16(16));
-	glVertex3f(0.0475, 0.001, -0.1425);
-	glTexCoord2t16(inttot16(16), inttot16(0));
-	glVertex3f(0.0475, 0.001, -0.13);
+	glVertex3f(0.0335, 0.001, -0.13);
+	glTexCoord2t16(inttot16(0), inttot16(15));
+	glVertex3f(0.0335, 0.001, -0.1425);
+	glTexCoord2t16(inttot16(15), inttot16(15));
+	glVertex3f(0.0455, 0.001, -0.1425);
+	glTexCoord2t16(inttot16(15), inttot16(0));
+	glVertex3f(0.0455, 0.001, -0.13);
 	glEnd();
 }

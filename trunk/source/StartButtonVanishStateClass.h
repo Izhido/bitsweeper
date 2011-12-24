@@ -12,9 +12,9 @@ class StartButtonVanishStateClass
 public:
 	StartButtonVanishStateClass();
 
-	bool Start(class CommonDataClass* CommonData);
+	void Start(class CommonDataClass* CommonData);
 
-	bool Run(class CommonDataClass* CommonData);
+	void Run(class CommonDataClass* CommonData);
 
 	void Draw(CommonDataClass* CommonData);
 

@@ -6,7 +6,6 @@
 
 CommonDataClass::CommonDataClass()
 : ToBottomScreen(false),
-DrawAgain(true),
 KeysHeld(0),
 TouchX(0),
 TouchY(0),

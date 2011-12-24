@@ -8,7 +8,7 @@ BackgroundFadeOutStateClass::BackgroundFadeOutStateClass()
 {
 }
 
-bool BackgroundFadeOutStateClass::Start(CommonDataClass* CommonData)
+void BackgroundFadeOutStateClass::Start(CommonDataClass* CommonData)
 {
 	Fading.SetLength(3);
 	Fading.Start[0] = 34.0 / 8.0;
@@ -18,10 +18,9 @@ bool BackgroundFadeOutStateClass::Start(CommonDataClass* CommonData)
 	Fading.Finish[1] = 0;
 	Fading.Finish[2] = 0;
 	Fading.SetMax(10);
-	return true;
 }
 
-bool BackgroundFadeOutStateClass::Run(CommonDataClass* CommonData)
+void BackgroundFadeOutStateClass::Run(CommonDataClass* CommonData)
 {
 	Fading.Step();
 	CommonData->ClearColorR = Fading.Value[0];
@@ -31,7 +30,6 @@ bool BackgroundFadeOutStateClass::Run(CommonDataClass* CommonData)
 	{
 		CommonData->StateMachine->Switch(SHUT_DOWN_STATE);
 	};
-	return true;
 }
 
 void BackgroundFadeOutStateClass::Draw(CommonDataClass* CommonData)

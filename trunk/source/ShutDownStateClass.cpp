@@ -6,15 +6,13 @@ ShutDownStateClass::ShutDownStateClass()
 {
 }
 
-bool ShutDownStateClass::Start(CommonDataClass* CommonData)
+void ShutDownStateClass::Start(CommonDataClass* CommonData)
 {
 	CommonData->Finished = true;
-	return false;
 }
 
-bool ShutDownStateClass::Run(CommonDataClass* CommonData)
+void ShutDownStateClass::Run(CommonDataClass* CommonData)
 {
-	return false;
 }
 
 void ShutDownStateClass::Draw(CommonDataClass* CommonData)

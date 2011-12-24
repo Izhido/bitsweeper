@@ -10,14 +10,13 @@ BoardCellChangeAppearStateClass::BoardCellChangeAppearStateClass()
 {
 }
 
-bool BoardCellChangeAppearStateClass::Start(CommonDataClass* CommonData)
+void BoardCellChangeAppearStateClass::Start(CommonDataClass* CommonData)
 {
 	CommonData->Board[CommonData->CellBeingChanged].State = CommonData->CellBeingChangedNewState;
 	Count = 0;
-	return true;
 }
 
-bool BoardCellChangeAppearStateClass::Run(CommonDataClass* CommonData)
+void BoardCellChangeAppearStateClass::Run(CommonDataClass* CommonData)
 {
 	Count++;
 	if(Count >= 5)
@@ -29,7 +28,6 @@ bool BoardCellChangeAppearStateClass::Run(CommonDataClass* CommonData)
 		};
 		CommonData->StateMachine->Switch(BOARD_WAIT_STATE);
 	};
-	return true;
 }
 
 void BoardCellChangeAppearStateClass::Draw(CommonDataClass* CommonData)

@@ -46,15 +46,15 @@ Requested(BACKGROUND_FADE_IN_STATE)
 	List[BEST_SCORES_TABLE_DISAPPEAR_STATE] = new BestScoresTableDisappearStateClass();
 }
 
-bool StateMachineClass::Run(CommonDataClass* CommonData)
+void StateMachineClass::Run(CommonDataClass* CommonData)
 {
 	if(Current != Requested)
 	{
 		Current = Requested;
-		return List[Current]->Start(CommonData);
+		List[Current]->Start(CommonData);
 	} else
 	{
-		return List[Current]->Run(CommonData);
+		List[Current]->Run(CommonData);
 	};
 }
 

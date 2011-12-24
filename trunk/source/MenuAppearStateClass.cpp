@@ -9,7 +9,7 @@ MenuAppearStateClass::MenuAppearStateClass()
 {
 }
 
-bool MenuAppearStateClass::Start(CommonDataClass* CommonData)
+void MenuAppearStateClass::Start(CommonDataClass* CommonData)
 {
 	Appearing.SetLength(2);
 	Appearing.Start[0] = 0;
@@ -17,17 +17,15 @@ bool MenuAppearStateClass::Start(CommonDataClass* CommonData)
 	Appearing.Finish[0] = -0.05;
 	Appearing.Finish[1] = 0.05;
 	Appearing.SetMax(10);
-	return true;
 }
 
-bool MenuAppearStateClass::Run(CommonDataClass* CommonData)
+void MenuAppearStateClass::Run(CommonDataClass* CommonData)
 {
 	Appearing.Step();
 	if(Appearing.Finished())
 	{
 		CommonData->StateMachine->Switch(MENU_WAIT_STATE);
 	};
-	return true;
 }
 
 void MenuAppearStateClass::Draw(CommonDataClass* CommonData)

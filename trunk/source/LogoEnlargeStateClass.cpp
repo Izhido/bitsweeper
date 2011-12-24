@@ -9,7 +9,7 @@ LogoEnlargeStateClass::LogoEnlargeStateClass()
 {
 }
 
-bool LogoEnlargeStateClass::Start(CommonDataClass* CommonData)
+void LogoEnlargeStateClass::Start(CommonDataClass* CommonData)
 {
 	Enlarging.SetLength(4);
 	Enlarging.Start[0] = 0;
@@ -21,17 +21,15 @@ bool LogoEnlargeStateClass::Start(CommonDataClass* CommonData)
 	Enlarging.Finish[2] = 0.0225;
 	Enlarging.Finish[3] = 0.08;
 	Enlarging.SetMax(10);
-	return true;
 }
 
-bool LogoEnlargeStateClass::Run(CommonDataClass* CommonData)
+void LogoEnlargeStateClass::Run(CommonDataClass* CommonData)
 {
 	Enlarging.Step();
 	if(Enlarging.Finished())
 	{
 		CommonData->StateMachine->Switch(MENU_APPEAR_STATE);
 	};
-	return true;
 }
 
 void LogoEnlargeStateClass::Draw(CommonDataClass* CommonData)

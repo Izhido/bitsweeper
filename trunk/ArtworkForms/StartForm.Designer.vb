@@ -22,19 +22,20 @@ Partial Class StartForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
         '
+        Me.Label1.BackColor = System.Drawing.SystemColors.InactiveCaption
         Me.Label1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Label1.Font = New System.Drawing.Font("Arial", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Calibri", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Firebrick
         Me.Label1.Location = New System.Drawing.Point(0, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(118, 54)
+        Me.Label1.Size = New System.Drawing.Size(122, 58)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "S T A R T"
+        Me.Label1.Text = " S T A R T"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'StartForm
@@ -42,10 +43,11 @@ Partial Class StartForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.InactiveCaptionText
-        Me.ClientSize = New System.Drawing.Size(118, 54)
+        Me.ClientSize = New System.Drawing.Size(122, 58)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.ForeColor = System.Drawing.SystemColors.InactiveCaption
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.KeyPreview = True
         Me.Name = "StartForm"
         Me.ShowIcon = False

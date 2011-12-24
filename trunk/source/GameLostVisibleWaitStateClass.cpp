@@ -12,13 +12,12 @@ GameLostVisibleWaitStateClass::GameLostVisibleWaitStateClass()
 {
 }
 
-bool GameLostVisibleWaitStateClass::Start(CommonDataClass* CommonData)
+void GameLostVisibleWaitStateClass::Start(CommonDataClass* CommonData)
 {
 	Count = 0;
-	return true;
 }
 
-bool GameLostVisibleWaitStateClass::Run(CommonDataClass* CommonData)
+void GameLostVisibleWaitStateClass::Run(CommonDataClass* CommonData)
 {
 	Count++;
 	if(Count >= 60)
@@ -39,7 +38,6 @@ bool GameLostVisibleWaitStateClass::Run(CommonDataClass* CommonData)
 	};
 	Operations::DoBoardScrolling(CommonData);
 	Operations::UpdateBoardCellBorders(CommonData);
-	return true;
 }
 
 void GameLostVisibleWaitStateClass::Draw(CommonDataClass* CommonData)

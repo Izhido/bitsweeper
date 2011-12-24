@@ -8,7 +8,7 @@ BackgroundFadeInStateClass::BackgroundFadeInStateClass()
 {
 }
 
-bool BackgroundFadeInStateClass::Start(CommonDataClass* CommonData)
+void BackgroundFadeInStateClass::Start(CommonDataClass* CommonData)
 {
 	Fading.SetLength(3);
 	Fading.Start[0] = 0;
@@ -18,10 +18,9 @@ bool BackgroundFadeInStateClass::Start(CommonDataClass* CommonData)
 	Fading.Finish[1] = 139.0 / 8.0;
 	Fading.Finish[2] = 34.0 / 8.0;
 	Fading.SetMax(10);
-	return true;
 }
 
-bool BackgroundFadeInStateClass::Run(CommonDataClass* CommonData)
+void BackgroundFadeInStateClass::Run(CommonDataClass* CommonData)
 {
 	Fading.Step();
 	CommonData->ClearColorR = Fading.Value[0];
@@ -31,7 +30,6 @@ bool BackgroundFadeInStateClass::Run(CommonDataClass* CommonData)
 	{
 		CommonData->StateMachine->Switch(LOGO_ZOOM_IN_STATE);
 	};
-	return true;
 }
 
 void BackgroundFadeInStateClass::Draw(CommonDataClass* CommonData)

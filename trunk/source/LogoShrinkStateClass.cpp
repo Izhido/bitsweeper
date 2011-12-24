@@ -9,7 +9,7 @@ LogoShrinkStateClass::LogoShrinkStateClass()
 {
 }
 
-bool LogoShrinkStateClass::Start(CommonDataClass* CommonData)
+void LogoShrinkStateClass::Start(CommonDataClass* CommonData)
 {
 	Shrinking.SetLength(4);
 	Shrinking.Start[0] = 0;
@@ -21,17 +21,15 @@ bool LogoShrinkStateClass::Start(CommonDataClass* CommonData)
 	Shrinking.Finish[2] = 0.0225;
 	Shrinking.Finish[3] = 0.08;
 	Shrinking.SetMax(10);
-	return true;
 }
 
-bool LogoShrinkStateClass::Run(CommonDataClass* CommonData)
+void LogoShrinkStateClass::Run(CommonDataClass* CommonData)
 {
 	Shrinking.Step();
 	if(Shrinking.Finished())
 	{
 		CommonData->StateMachine->Switch(BOARD_WAIT_STATE);
 	};
-	return true;
 }
 
 void LogoShrinkStateClass::Draw(CommonDataClass* CommonData)

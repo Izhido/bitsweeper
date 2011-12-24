@@ -9,7 +9,7 @@ StartButtonZoomInStateClass::StartButtonZoomInStateClass()
 {
 }
 
-bool StartButtonZoomInStateClass::Start(CommonDataClass* CommonData)
+void StartButtonZoomInStateClass::Start(CommonDataClass* CommonData)
 {
 	Zooming.SetLength(4);
 	Zooming.Start[0] = 0;
@@ -21,17 +21,15 @@ bool StartButtonZoomInStateClass::Start(CommonDataClass* CommonData)
 	Zooming.Finish[2] = -0.125;
 	Zooming.Finish[3] = -0.075;
 	Zooming.SetMax(10);
-	return true;
 }
 
-bool StartButtonZoomInStateClass::Run(CommonDataClass* CommonData)
+void StartButtonZoomInStateClass::Run(CommonDataClass* CommonData)
 {
 	Zooming.Step();
 	if(Zooming.Finished())
 	{
 		CommonData->StateMachine->Switch(LEGEND_APPEAR_STATE);
 	};
-	return true;
 }
 
 void StartButtonZoomInStateClass::Draw(CommonDataClass* CommonData)

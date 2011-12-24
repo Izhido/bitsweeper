@@ -9,23 +9,21 @@ LogoAndStartButtonVanishStateClass::LogoAndStartButtonVanishStateClass()
 {
 }
 
-bool LogoAndStartButtonVanishStateClass::Start(CommonDataClass* CommonData)
+void LogoAndStartButtonVanishStateClass::Start(CommonDataClass* CommonData)
 {
 	Vanishing.SetLength(1);
 	Vanishing.Start[0] = 0;
 	Vanishing.Finish[0] = 0.1;
 	Vanishing.SetMax(10);
-	return true;
 }
 
-bool LogoAndStartButtonVanishStateClass::Run(CommonDataClass* CommonData)
+void LogoAndStartButtonVanishStateClass::Run(CommonDataClass* CommonData)
 {
 	Vanishing.Step();
 	if(Vanishing.Finished())
 	{
 		CommonData->StateMachine->Switch(BACKGROUND_FADE_OUT_STATE);
 	};
-	return true;
 }
 
 void LogoAndStartButtonVanishStateClass::Draw(CommonDataClass* CommonData)

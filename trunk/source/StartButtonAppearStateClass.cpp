@@ -9,7 +9,7 @@ StartButtonAppearStateClass::StartButtonAppearStateClass()
 {
 }
 
-bool StartButtonAppearStateClass::Start(CommonDataClass* CommonData)
+void StartButtonAppearStateClass::Start(CommonDataClass* CommonData)
 {
 	Appearing.SetLength(2);
 	Appearing.Start[0] = 0;
@@ -17,17 +17,15 @@ bool StartButtonAppearStateClass::Start(CommonDataClass* CommonData)
 	Appearing.Finish[0] = -0.05;
 	Appearing.Finish[1] = 0.05;
 	Appearing.SetMax(10);
-	return true;
 }
 
-bool StartButtonAppearStateClass::Run(CommonDataClass* CommonData)
+void StartButtonAppearStateClass::Run(CommonDataClass* CommonData)
 {
 	Appearing.Step();
 	if(Appearing.Finished())
 	{
 		CommonData->StateMachine->Switch(LEGEND_APPEAR_STATE);
 	};
-	return true;
 }
 
 void StartButtonAppearStateClass::Draw(CommonDataClass* CommonData)

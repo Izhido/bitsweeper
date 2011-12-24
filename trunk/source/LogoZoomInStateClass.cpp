@@ -9,14 +9,13 @@ LogoZoomInStateClass::LogoZoomInStateClass()
 {
 }
 
-bool LogoZoomInStateClass::Start(CommonDataClass* CommonData)
+void LogoZoomInStateClass::Start(CommonDataClass* CommonData)
 {
 	Count = 0;
 	Factor = 0;
-	return true;
 }
 
-bool LogoZoomInStateClass::Run(CommonDataClass* CommonData)
+void LogoZoomInStateClass::Run(CommonDataClass* CommonData)
 {
 	Count++;
 	Factor = CommonData->Trigonometry.Sin((Count * 5 * CommonData->Trigonometry.Pi) / (6 * 10));
@@ -24,7 +23,6 @@ bool LogoZoomInStateClass::Run(CommonDataClass* CommonData)
 	{
 		CommonData->StateMachine->Switch(START_BUTTON_ZOOM_IN_STATE);
 	};
-	return true;
 }
 
 void LogoZoomInStateClass::Draw(CommonDataClass* CommonData)
